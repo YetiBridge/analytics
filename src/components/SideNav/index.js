@@ -164,8 +164,8 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://app.pangolin.exchange" target="_blank">
-                Pangolin
+              <Link href="https://pangolindex.netlify.app" target="_blank">
+                YetiBridge
               </Link>
             </HeaderText>
             <HeaderText>
@@ -179,9 +179,9 @@ function SideNav({ history }) {
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://markr.io/#/applications/Pangolin" target="_blank">
+              {/* <Link href="https://markr.io/#/applications/Pangolin" target="_blank">
                 Markr.io
-              </Link>
+              </Link> */}
             </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
@@ -197,10 +197,10 @@ function SideNav({ history }) {
           )}
         </DesktopWrapper>
       ) : (
-          <MobileWrapper>
-            <Title />
-          </MobileWrapper>
-        )}
+        <MobileWrapper>
+          <Title />
+        </MobileWrapper>
+      )}
     </Wrapper>
   )
 }
